@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+}
+
+body{
+    background-color: black;
+}
+.main{
+    display: flex;
+    margin: 10px;
+    gap: 5px;
+}
+
+.left .sec1{
+    width: 25vw;
+    background-color: #121212;
+    border-radius: 5px;
+    height: 18vh;
+}
+
+.left .sec2{
+    margin: 7px 0px;
+    height: 70vh;
+    width: 25vw;
+    background-color: #121212;
+    border-radius: 5px;
+}
+
+.left img{
+    filter: invert(1); 
+}
+
+.sec1 .spotifyImg{
+    padding: 15px;
+}
+
+.sec1 .home{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 7px;
+    padding: 5px 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.sec1 .search{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 7px;
+    padding: 5px 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.sec2{
+    position: relative;
+}
+.sec2 .library{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 7px;
+    padding: 10px 15px;
+    font-size: 15px;
+    position: relative;
+}
+
+.sec2 .library .addSign{
+    position: absolute;
+    right:5px;
+}
+.libraryImg img{
+    height: 25px;
+}
+
+.songs{
+    padding: 10px;
+    max-height: 55vh;
+    overflow-y: scroll;
+}
+.sec2 .songs .songCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.863);
+    border-radius: 5px;
+    height: 50px;
+    color: white;
+    padding: 0px 5px;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+.songCard .musicDetail{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+}
+
+.songs .songCard img{
+    height: 25px;
+}
+
+.sec2 .footer{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    gap: 7px;
+    padding: 10px;
+}
+
+.sec2 .footer a{
+    color: white;
+    font-size: 9px;
+}
+
+.right{
+    width: 75vw;
+    height: 89vh;
+    background-color: #121212;
+    border-radius: 5px;
+    position: relative;
+}
+
+.right .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e0e0e;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.right .nav .sg{
+    display: flex;
+}
+
+.right .nav .sg img{
+    filter: invert(1);
+}
+
+.right .nav .login{
+    background-color: white;
+    color: black;
+    padding: 7px 20px;
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: bolder;
+    border-style: none;
+    cursor: pointer;
+}
+
+.right .nav .signup{
+    background-color: white;
+    color: #121212;
+    padding: 7px 20px;
+    border-radius: 45px;
+    font-size: 12px;
+    font-weight: bolder;
+    border-style: none;
+    cursor: pointer;
+}
+
+.right .soptifyPlaylist .text{
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.right .soptifyPlaylist{
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.cardContainer{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.cardContainer .card{
+    width: 180px;
+    background-color: #0e0e0e;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.cardContainer .card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.cardContainer .sleepContent{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.669)
+}
+
+.right .playBar{
+    background-color: #0e0e0e;
+    position: absolute;
+    bottom: 0;
+    width: 97.9%;
+    padding: 12px;
+    
+}
+
+.right .playBar img{
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.playBar .playBarFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    color: white;
+    font-size: 12px;
+}
+
+.songName1{
+    width: 150px;
+}
+.right .seekBar .seekLine{
+    height: 4px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.932);
+    cursor: pointer;
+}
+
+.seekBar .circle{
+    height: 9px;
+    width: 9px;
+    border-radius: 60px;
+    background-color: white;
+    position: absolute;
+    bottom: 9px;
+    left: 1%;
+    transition: left 0.5s;
+    cursor: pointer;
+}
+
+/* scrollbar theme dark*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #535252;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333;
+}
